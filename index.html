@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -18,29 +19,30 @@
 <body>
 
   <div class="main">
-    <div class="header flex justify-between">
+
+    <div class="header flex justify-between md:px-20 py-14">
       <div class="header__logo">
         <img src="images/logo.svg" alt="">
       </div>
       <div class="header__list">
-        <ul class="flex">
-          <li class="mr-10"><a href="">Features</a></li>
-          <li class="mr-10"><a href="">Team</a></li>
-          <li><a href="">Sign in</a></li>
+        <ul class="flex font-medium">
+          <li class="mr-10 hover:text-slate-500 duration-200"><a href="">Features</a></li>
+          <li class="mr-10 hover:text-slate-500 duration-200"><a href="">Team</a></li>
+          <li class="hover:text-slate-500 duration-200"><a href="">Sign in</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="start flex">
-      <div class="start__txt">
-        <h1>All your files in one secure location, accessible anywhere</h1>
-        <h3>Fylo stores your most important files in one secure location. 
+    <div class="start flex md:p-20">
+      <div class="start__txt flex flex-col justify-center">
+        <h1 class="text-4xl font-bold">All your files in one secure location, accessible anywhere</h1>
+        <h3 class="text-bold mt-10 w-3/4 text-slate-500 font-medium">Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.</h3>
-        <div class="start__txt__btn">
+        <div class="start__txt__btn mt-6">
           <form action="">
-            <input type="email" placeholder="Enter your email...">
-            <button type="button">Get Started</button>
+            <input class="px-14 py-3 rounded-md border-2" type="email" placeholder="Enter your email...">
+            <button class="px-10 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-500 duration-200" type="button">Get Started</button>
           </form>
         </div>
       </div>
@@ -49,20 +51,24 @@
       </div>
     </div>
 
-    <div class="content flex">
+    <div class="content flex md:p-20">
       <div class="content__txt">
-        <h1>Stay productive, wherever you are</h1>
-        <h3>Never let location be an issue when accessing your files. Fylo has you 
+        <h1 class="text-4xl font-bold">Stay productive, wherever you are</h1>
+        <h3 class="text-base mt-10 w-3/4 text-slate-500 font-medium">Never let location be an issue when accessing your files. Fylo has you 
           covered for all of your file storage needs.</h3>
-        <h3>Securely share files and folders with friends, family and colleagues for 
+        <h3 class="text-base mt-6 w-3/4 text-slate-500 font-medium">Securely share files and folders with friends, family and colleagues for 
           live collaboration. No email attachments required!</h3>
-        <a href=""><h2>See how Fylo works</h2></a>
-        <div class="content__txt__card">
+        <a class="flex mt-5" href=""><h2 class="text-green-800 hover:text-green-600 duration-200 font-meduim text-lg underline">See how Fylo works</h2> <img class="h-8" src="images/icon-arrow.svg" alt=""> </a>
+        <div class="content__txt__card shadow-xl rounded-lg p-5 w-1/2 mt-6">
           <img src="images/icon-quotes.svg" alt="">
-          <p>Fylo has improved our team productivity by an order of magnitude. Since 
+          <p class="text-base">Fylo has improved our team productivity by an order of magnitude. Since 
             making the switch our team has become a well-oiled collaboration machine.</p>
-          <div class="content__txt__card__profile">
-            <img src="images/avatar-testimonial.jpg" alt="">
+          <div class="content__txt__card__profile flex mt-5">
+            <img class="w-10 h-full rounded-full" src="images/avatar-testimonial.jpg" alt="">
+            <div class="content__txt__card__profile__info ml-5">
+              <p class="font-bold">Kyle Burton</p>
+              <p>Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
       </div>
@@ -71,40 +77,44 @@
       </div>
     </div>
 
-    <div class="access flex justify-between">
-      <div class="access__txt"></div>
-      <div class="access__input">
+    <div class="access flex justify-between md:p-20 bg-zinc-600">
+      <div class="access__txt w-1/2">
+        <h1 class="text-4xl font-bold text-white">Get early access today</h1>
+        <p class="text-base w-3/4 mt-10 text-white">It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div class="access__input w-1/2">
         <form action="">
-          <input type="email" placeholder="email@example.com">
-          <button type="button">Get Started For Free</button>
+          <input class="px-20 py-3 rounded-md border-2" type="email" placeholder="email@example.com">
+          <button class="px-4 py-3 bg-blue-600 rounded-md text-white font-medium hover:bg-blue-500 duration-200" type="button">Get Started For Free</button>
         </form>
       </div>
     </div>
 
-    <footer class="flex justify-around">
+    <footer class="flex justify-between md:p-20 bg-blue-900">
       <div class="footer-1">
         <div class="footer-1__img">
           <img src="images/logo.svg" alt="">
         </div>
-        <div class="footer-1__contact">
+        <div class="footer-1__contact flex mt-5">
           <img src="images/icon-phone.svg" alt="">
-          <p>Phone: +1-543-123-4567</p>
+          <p class="text-white ml-5">Phone: +1-543-123-4567</p>
         </div>
-        <div class="footer-1__email">
+        <div class="footer-1__email flex mt-5">
           <img src="images/icon-email.svg" alt="">
-          <p>example@fylo.com</p>
+          <p class="text-white ml-5">example@fylo.com</p>
         </div>
       </div>
       <div class="footer-2">
-        <p>About Us</p>
-        <p>Jobs</p>
-        <p>Press</p>
-        <p>Blog</p>
+        <p class="text-white">About Us</p>
+        <a class="text-white" href=""><p>Jobs</p></a>
+        <a class="text-white" href=""> <p>Press</p></a>
+        <a class="text-white" href="" ><p>Blog</p></a>
       </div>
       <div class="footer-3">
-        <p>Contact Us</p>
-        <p>Terms</p>
-        <p>Privacy</p>
+        <p class="text-white">Contact Us</p>
+        <p class="text-white">Terms</p>
+        <p class="text-white">Privacy</p>
       </div>
       <div class="footer-4">
 
@@ -152,7 +162,7 @@
 
   About Us
   Jobs
-  Press
+  Pr
   Blog
 
   Contact Us
