@@ -3,5 +3,85 @@
 } */
 
 @media (max-width: 660px) {
-    
+
+    .header img {
+        height: 25px;
+    }
+
+    .header ul li {
+        font-size: 12px;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .content,
+    .access {
+        margin-top: 5rem;
+    }
+
+    .start,
+    .content,
+    .access {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start h3,
+    .content h3,
+    .access p {
+        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .content__txt__card {
+        margin: auto;
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .access__txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .access__input {
+        align-items: center;
+        width: 100%;
+    }
+
+    .input {
+        margin-top: 2.5rem;
+        padding-right: 2rem;
+    }
+
+    .btn {
+        padding: 0.75rem 6.30rem;
+        margin-top: 1rem;
+    }
+
+
+    .header,
+    .start,
+    .content,
+    .access,
+    footer {
+        padding: 3rem;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-2,
+    .footer-3 {
+        margin-top: 2.5rem;
+    }
+
+    .start__txt__btn button {
+        padding: 0.75rem 6.65rem;
+        margin: 1rem auto;
+    }
+
 }
