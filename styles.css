@@ -2,6 +2,10 @@
     background-image: url(images/bg-curve-mobile.svg);
 } */
 
+.p-e {
+    display: none;
+}
+
 @media (max-width: 660px) {
 
     .header img {

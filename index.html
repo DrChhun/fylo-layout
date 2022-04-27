@@ -20,7 +20,7 @@
 
   <div class="main">
 
-    <div class="header flex justify-between md:px-20 py-14">
+    <div class="header flex justify-between md:px-20 py-14 sm:p-12 ">
       <div class="header__logo">
         <img src="images/logo.svg" alt="">
       </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="start flex md:p-20">
+    <div class="start flex md:p-20 sm:p-12 ">
       <div class="start__txt flex flex-col justify-center">
         <h1 class="text-4xl font-bold">All your files in one secure location, accessible anywhere</h1>
         <h3 class="text-bold mt-10 w-3/4 text-slate-500 font-medium">Fylo stores your most important files in one secure location. 
@@ -41,9 +41,10 @@
           family, and co-workers.</h3>
         <div class="start__txt__btn mt-6">
           <form action="">
-            <input class="px-14 py-3 rounded-md border-2" type="email" placeholder="Enter your email...">
-            <button class="px-10 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-500 duration-200" type="button">Get Started</button>
+            <input class="inputE px-14 py-3 rounded-md border-2" type="email" placeholder="Enter your email...">
+            <button class="btnE px-10 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-500 duration-200" type="submit">Get Started</button>
           </form>
+          <p class="p-e">Please check your email</p>
         </div>
       </div>
       <div class="start__img">
@@ -51,7 +52,7 @@
       </div>
     </div>
 
-    <div class="content flex md:p-20">
+    <div class="content flex md:p-20 sm:p-12 ">
       <div class="content__txt">
         <h1 class="text-4xl font-bold">Stay productive, wherever you are</h1>
         <h3 class="text-base mt-10 w-3/4 text-slate-500 font-medium">Never let location be an issue when accessing your files. Fylo has you 
@@ -77,7 +78,7 @@
       </div>
     </div>
 
-    <div class="access flex justify-between md:p-20 bg-zinc-600">
+    <div class="access flex justify-between md:p-20 bg-zinc-600 sm:p-12">
       <div class="access__txt w-1/2">
         <h1 class="text-4xl font-bold text-white">Get early access today</h1>
         <p class="text-base w-3/4 mt-10 text-white">It only takes a minute to sign up and our free starter tier is extremely generous. 
@@ -85,13 +86,14 @@
       </div>
       <div class="access__input w-1/2">
         <form action="">
-          <input class="input px-20 py-3 rounded-md border-2" type="email" placeholder="email@example.com">
-          <button class="btn px-4 py-3 bg-blue-600 rounded-md text-white font-medium hover:bg-blue-500 duration-200" type="button">Get Started For Free</button>
+          <input class="inputE input px-20 py-3 rounded-md border-2" type="email" placeholder="email@example.com">
+          <button class="btnE btn px-4 py-3 bg-blue-600 rounded-md text-white font-medium hover:bg-blue-500 duration-200" type="submit">Get Started For Free</button>
         </form>
+        <p class="p-e">Please check your email</p>
       </div>
     </div>
 
-    <footer class="flex justify-between md:p-20 bg-blue-900">
+    <footer class="flex justify-between md:p-20 bg-blue-900 sm:p-12">
       <div class="footer-1">
         <div class="footer-1__img">
           <img src="images/logo.svg" alt="">
@@ -170,4 +172,6 @@
   Privacy -->
 
 </body>
+
+<script src="app.js"></script>
 </html>
